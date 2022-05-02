@@ -1,8 +1,13 @@
-header {
-    background: black;
-    height: 10%px;
-    width: 100%;
-    text-align: center;
-    color: white;
-    margin: 0; 
+.banner {
+  background: black;
+  height: 10%px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  margin: 0; 
   }
+
+.resume_embed {
+  width: 50%;
+  margin: 0 auto;
+}
