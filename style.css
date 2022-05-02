@@ -1,0 +1,34 @@
+* {
+  margin-top: 0;
+}
+
+body {    
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.banner {
+  height: 75px;
+  width: 100%;
+  font-family: "Monaco", monospace;
+  font-size: 40px;
+  color: white;
+  background-color: #2d2d38;
+  /*
+  background-image: url('Images/Banner.jpg');
+  */
+  }
+
+.banner_title {
+  width: 100%;
+  text-align: center;
+}
+
+.buttons {
+
+}
+
+.resume_embed {
+  width: 100%;
+  margin: 0 auto;
+}
