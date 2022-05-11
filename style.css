@@ -4,15 +4,15 @@ body {
 }
 
 .banner {
-  height: 75px;
+  height: 70px;
   width: 100%;
   font-family: "Monaco", monospace;
-  font-size: 26px;
+  font-size: 20px;
+  font-weight: lighter;
+  /* text colour */
   color: white;
-  background-color: #2d2d38;
-  /*
   background-image: url('Images/Banner.jpg');
-  */
+  background-size: 7px;
   position: sticky;
   top: 0;
   }
@@ -26,9 +26,10 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 75px;
+  height: 70px;
   width: 100%;
   margin: 0 !important;
+  font-weight: lighter;
 }
 
 .buttons {
