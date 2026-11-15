@@ -442,6 +442,13 @@ html[data-theme="light"] .theme-toggle .icon-moon {
   padding: 0.55rem 0.7rem;
 }
 
+.card-media.media-wide img {
+  aspect-ratio: 2.6 / 1;
+  object-fit: contain;
+  background: var(--chart-bg);
+  padding: 0.65rem 0.55rem;
+}
+
 .card-credit {
   margin: 0;
   padding: 0.4rem 0.95rem 0.55rem;
