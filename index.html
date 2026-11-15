@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jaden Zwicker</title>
+  <meta name="description" content="Software engineer building AI agent systems and automation, with low-level and embedded roots and an electrical-engineering degree.">
+  <meta name="theme-color" content="#0e0f12">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="wordmark" href="#top"><span class="wordmark-full">Jaden Zwicker</span><span class="wordmark-short">JZ</span></a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <p class="eyebrow">Software Engineer</p>
+        <h1>Jaden Zwicker</h1>
+        <p class="lede">Software engineer building AI agent systems and automation, with low-level and embedded roots and an electrical-engineering degree.</p>
+        <ul class="contact">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11z"/><circle cx="12" cy="10" r="2.2"/></svg>
+            Los Angeles, CA
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+            <a href="mailto:jaden.zwicker@gmail.com">jaden.zwicker@gmail.com</a>
+          </li>
+          <li>
+            <svg class="icon-linkedin" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.21 0 22.23 0z"/></svg>
+            <a href="https://www.linkedin.com/in/jadenzwicker/">linkedin.com/in/jadenzwicker</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p class="section-intro">High-level abstracts of selected school and work projects. Code and full write-ups are not hosted here.</p>
+        </div>
+
+        <div class="tablist" role="tablist" aria-label="Project categories">
+          <button class="tab" id="tab-school" type="button" role="tab" aria-selected="true" aria-controls="panel-school" data-tab="school" tabindex="0">School Projects</button>
+          <button class="tab" id="tab-work" type="button" role="tab" aria-selected="false" aria-controls="panel-work" data-tab="work" tabindex="-1">Work Projects</button>
+        </div>
+
+        <div class="tab-panel" id="panel-school" role="tabpanel" aria-labelledby="tab-school">
+          <p class="group-label">Georgia Tech, M.S. Computer Science</p>
+          <div class="project-grid">
+            <article class="card">
+              <div class="card-top">
+                <p class="card-context">CS 7643 Deep Learning · Fall 2024</p>
+              </div>
+              <h3>Lightweight Sentiment Analysis</h3>
+              <p class="card-role">Graduate team project</p>
+              <p class="card-abstract">Compared a small fine-tuned language model with larger LLMs and classical machine-learning baselines on IMDb movie-review sentiment. A 135-million-parameter model reached 89.2% test accuracy after fine-tuning, close to a much larger GPT-2 baseline (92.36%) and to logistic regression with TF-IDF (89.14%), showing that a carefully tuned small model can stay competitive without the cost of a large LLM.</p>
+              <ul class="tags">
+                <li>Deep learning</li>
+                <li>LLM</li>
+                <li>NLP</li>
+                <li>Fine-tuning</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="card-top">
+                <p class="card-context">CS 7641 Machine Learning · Spring 2024</p>
+              </div>
+              <h3>Solving Markov Decision Processes</h3>
+              <p class="card-role">Graduate course project</p>
+              <p class="card-abstract">Compared value iteration, policy iteration, and Q-learning on two control problems, Frozen Lake and Blackjack. Policy iteration reached an optimal policy in fewer iterations than value iteration, though with a longer runtime. Q-learning was much more sensitive to problem size and did not reliably solve the larger Frozen Lake setting under the compute limits tested.</p>
+              <ul class="tags">
+                <li>Reinforcement learning</li>
+                <li>MDPs</li>
+                <li>Q-learning</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="card-top">
+                <p class="card-context">CS 7641 Machine Learning · Spring 2024</p>
+              </div>
+              <h3>Unsupervised Learning and Supervised Applications</h3>
+              <p class="card-role">Graduate course project</p>
+              <p class="card-abstract">Studied clustering and dimensionality reduction, then used them as input to a neural network on two UCI datasets (car evaluation and wine quality). Reducing features cut training time with little extra cost from the reduction step itself. Adding cluster labels as extra features did not improve the network; training on cluster structure alone was the more informative experiment.</p>
+              <ul class="tags">
+                <li>Unsupervised learning</li>
+                <li>Clustering</li>
+                <li>Dimensionality reduction</li>
+                <li>Neural networks</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="card-top">
+                <p class="card-context">CS 7641 Machine Learning · Spring 2024</p>
+              </div>
+              <h3>Randomized Optimization Techniques</h3>
+              <p class="card-role">Graduate course project</p>
+              <p class="card-abstract">Compared randomized hill climbing, simulated annealing, and a genetic algorithm on classic optimization problems and as methods for training neural-network weights. A standard neural-net trainer reached the highest training accuracy and ran several times faster; randomized hill climbing had only a small edge on cross-validation accuracy, which was not worth the extra runtime in this setting.</p>
+              <ul class="tags">
+                <li>Randomized optimization</li>
+                <li>Neural networks</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="card-top">
+                <p class="card-context">CS 7641 Machine Learning · Spring 2024</p>
+              </div>
+              <h3>Supervised Learning Algorithms</h3>
+              <p class="card-role">Graduate course project</p>
+              <p class="card-abstract">Compared decision trees, neural networks, boosted trees, support vector machines, and k-nearest neighbors on UCI car-evaluation and wine-quality datasets. Support vector machines reached the highest accuracy overall, while decision trees and boosted trees were the most prone to overfitting. The results underscored choosing the model to fit the problem rather than defaulting to neural networks.</p>
+              <ul class="tags">
+                <li>Supervised learning</li>
+                <li>SVM</li>
+                <li>Decision trees</li>
+                <li>Neural networks</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="card-top">
+                <p class="card-context">CS 7637 Knowledge-Based AI · Fall 2023</p>
+              </div>
+              <h3>Raven&rsquo;s Progressive Matrices Agent</h3>
+              <p class="card-role">Graduate course project</p>
+              <p class="card-abstract">Built a knowledge-based agent to solve Raven&rsquo;s Progressive Matrices, a nonverbal test of pattern reasoning. With a learned knowledge base the agent solved all 192 problems in the project scope; without that knowledge it solved 19 of 96 basic and test problems, and would not match human performance on a single unseen attempt.</p>
+              <ul class="tags">
+                <li>Knowledge-based AI</li>
+                <li>Intelligent agents</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="card-top">
+                <p class="card-context">CS 7646 Machine Learning for Trading · Fall 2023</p>
+              </div>
+              <h3>Developing Stock Market Traders</h3>
+              <p class="card-role">Graduate course project</p>
+              <p class="card-abstract">Built a manual trading policy from technical indicators and a random-forest strategy learner, and compared both with a buy-and-hold benchmark on J.P. Morgan stock. The learned strategy clearly beat the manual rules and the benchmark in-sample, and slightly outperformed them out-of-sample, even though out-of-sample returns were still negative in a down market.</p>
+              <ul class="tags">
+                <li>Machine learning</li>
+                <li>Random forests</li>
+                <li>Technical indicators</li>
+                <li>Python</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="card-top">
+                <p class="card-context">CS 7646 Machine Learning for Trading · Fall 2023</p>
+              </div>
+              <h3>Assessing Decision Tree Learners</h3>
+              <p class="card-role">Graduate course project</p>
+              <p class="card-abstract">Implemented decision-tree and random-tree learners, including a bagged ensemble, and studied how they overfit. Smaller leaves improved accuracy but increased overfitting; bagging reduced that gap. The correlation-based decision tree outperformed the random tree on the error and fit metrics used.</p>
+              <ul class="tags">
+                <li>Decision trees</li>
+                <li>Ensemble learning</li>
+                <li>Python</li>
+              </ul>
+            </article>
+          </div>
+
+          <p class="group-label">Kennesaw State, B.S. Electrical Engineering</p>
+          <div class="project-grid">
+            <article class="card">
+              <div class="card-top">
+                <p class="card-context">CPE 4903 · Fall 2022</p>
+              </div>
+              <h3>Live Handwritten-Digit CNN on a Raspberry Pi</h3>
+              <p class="card-role">Undergraduate course project</p>
+              <p class="card-abstract">Built a standalone embedded ML system that reads handwritten digits from a camera in real time, using a convolutional neural network in Python (Keras / TensorFlow) with OpenCV image processing.</p>
+              <ul class="tags">
+                <li>Python</li>
+                <li>Keras</li>
+                <li>TensorFlow</li>
+                <li>OpenCV</li>
+                <li>CNN</li>
+                <li>Raspberry Pi</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="card-top">
+                <p class="card-context">CPE 3020 · Spring 2023</p>
+              </div>
+              <h3>RGB LED Controller on an FPGA</h3>
+              <p class="card-role">Undergraduate course project</p>
+              <p class="card-abstract">Wrote VHDL components on a Basys3 FPGA for low-latency control of an RGB LED strand over UART, using pipelining and parallel processing to cut resource usage, with multiple state machines for real-time color and brightness control.</p>
+              <ul class="tags">
+                <li>VHDL</li>
+                <li>FPGA</li>
+                <li>Basys3</li>
+                <li>UART</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="card-top">
+                <p class="card-context">EE 4800 Senior Project · Spring 2023</p>
+              </div>
+              <h3>Blind-Spot Detector</h3>
+              <p class="card-role">Senior project</p>
+              <p class="card-abstract">Built a Raspberry Pi 3 device with a Pi camera, motion sensors, and vibration motors, plus a C++ application that alerts the driver.</p>
+              <ul class="tags">
+                <li>C++</li>
+                <li>Raspberry Pi</li>
+                <li>Embedded systems</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="card-top">
+                <p class="card-context">EE 2501 · Summer 2022</p>
+              </div>
+              <h3>Traffic-Light Controller</h3>
+              <p class="card-role">Undergraduate course project</p>
+              <p class="card-abstract">Designed a VHDL state machine programmed onto a 22V10 PLD, with 555 timers, counters, debounced switches, car sensing, turn lanes, and a rail-crossing sequence.</p>
+              <ul class="tags">
+                <li>VHDL</li>
+                <li>PLD</li>
+                <li>Digital logic</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="card-top">
+                <p class="card-context">EE 4201 · Spring 2023</p>
+              </div>
+              <h3>PID Servo-Arm Controller</h3>
+              <p class="card-role">Undergraduate course project</p>
+              <p class="card-abstract">Modeled and tuned a PID loop for a servo-driven arm for fast response with minimal overshoot and steady-state error.</p>
+              <ul class="tags">
+                <li>Control systems</li>
+                <li>PID</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+
+        <div class="tab-panel" id="panel-work" role="tabpanel" aria-labelledby="tab-work" hidden>
+          <div class="project-list">
+            <article class="card">
+              <div class="card-top">
+                <p class="card-context">SpaceXSI · 2026–Present</p>
+              </div>
+              <h3>Satellite and Payload Production Automation and HIL Test</h3>
+              <p class="card-role">Technical lead and end-to-end owner of production test software</p>
+              <p class="card-abstract">LLM-agent workflows for ticket triage, workflow orchestration, metrics, automated pull requests, and verification-run launches. Python test infrastructure and C++ hardware-in-the-loop avionics test for production satellites and payloads on a 1000+ satellite program.</p>
+              <ul class="tags">
+                <li>Python</li>
+                <li>C++</li>
+                <li>LLM agents</li>
+                <li>Test automation</li>
+                <li>HIL</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="card-top">
+                <p class="card-context">SpaceXSI · 2026–Present</p>
+              </div>
+              <h3>Rust Bare-Metal Safety Services</h3>
+              <p class="card-role">Software engineer</p>
+              <p class="card-abstract">Bare-metal safety services written in Rust.</p>
+              <ul class="tags">
+                <li>Rust</li>
+                <li>Bare-metal</li>
+                <li>Embedded systems</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="card-top">
+                <p class="card-context">Georgia Tech Research Institute · 2023–2025</p>
+              </div>
+              <h3>Real-Time Packet Translation and Distribution Device</h3>
+              <p class="card-role">Main engineer and technical lead</p>
+              <p class="card-abstract">A real-time embedded CPU + FPGA system that ingests 10 Gb streams of pulse descriptor words and drives time-synchronized RF signal generators for hardware-in-the-loop test. A dual 100G path into the CPU and a Xilinx Virtex UltraScale+ FPGA fans out to 48 × 10G ports, with DPDK ingest, zero-copy movement, and models for Doppler, free-space loss, antenna pattern, and angle of arrival. Per-core latency fell from about 2 µs to under 500 ns, with 2 million packets per second sustained at under 1 ms end to end — 6× the legacy RF channel capacity, later scaled to about 1,400 signal-generator channels.</p>
+              <ul class="tags">
+                <li>C++</li>
+                <li>DPDK</li>
+                <li>FPGA</li>
+                <li>Xilinx Virtex UltraScale+</li>
+                <li>Real-time systems</li>
+                <li>DSP</li>
+                <li>SCPI</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="card-top">
+                <p class="card-context">Georgia Tech Research Institute · 2023–2025</p>
+              </div>
+              <h3>Cognitive Electronic Warfare and AI Systems</h3>
+              <p class="card-role">Software engineer</p>
+              <p class="card-abstract">Software for electronic-warfare systems, including jammers and radar components on fighter jets, and the cognitive layer on top of them: AI-based models, AI-designed algorithms, and advanced model analysis.</p>
+              <ul class="tags">
+                <li>AI</li>
+                <li>Signal processing</li>
+                <li>Electronic warfare</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="card-top">
+                <p class="card-context">Georgia Tech Research Institute · 2023–2025</p>
+              </div>
+              <h3>MLOps Platform with Hardware-in-the-Loop Integration</h3>
+              <p class="card-role">Built the platform and led HIL-integration R&amp;D</p>
+              <p class="card-abstract">Division-wide MLOps pipeline with automated test-case generation, a training-data store, model-output ranking, and an automated iteration loop. Built on Kubernetes, Docker, and Kubeflow for benchmarking waveform classifiers. Led a self-directed internal R&amp;D project to connect the pipeline to hardware-in-the-loop systems.</p>
+              <ul class="tags">
+                <li>MLOps</li>
+                <li>Kubernetes</li>
+                <li>Docker</li>
+                <li>Kubeflow</li>
+                <li>Machine learning</li>
+                <li>HIL</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Experience</h2>
+        </div>
+        <div class="jobs">
+          <article class="card job">
+            <h3>SpaceXSI</h3>
+            <p class="job-meta">Software Engineer · <span class="nowrap">Jan 2026 – Present</span> · <span class="nowrap">Los Angeles, CA</span></p>
+            <p>Technical lead and end-to-end owner of production test software for a 1000+ satellite and payload program, driving delivery across test, automation, and operations. Work includes LLM-agent automation, Python test infrastructure, C++ hardware-in-the-loop avionics test, and Rust bare-metal safety services.</p>
+          </article>
+          <article class="card job">
+            <h3>Georgia Tech Research Institute</h3>
+            <p class="job-meta">Software Engineer, Electronic Systems Laboratory · <span class="nowrap">Jun 2023 – Dec 2025</span> · <span class="nowrap">Atlanta, GA</span></p>
+            <p>Head engineer and end-to-end owner of a real-time C++ / DPDK + FPGA packet-processing system for RF signal handling, from architecture through CI/CD, deployment, and lab integration. Built a division-wide MLOps platform, and developed software for AI-enabled electronic-warfare systems.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Education</h2>
+        </div>
+        <div class="edu-list">
+          <article class="card edu">
+            <h3>Georgia Institute of Technology</h3>
+            <p class="edu-degree">M.S. Computer Science (Machine Learning) · 4.0</p>
+            <p class="edu-meta">Aug 2023 – May 2025</p>
+          </article>
+          <article class="card edu">
+            <h3>Kennesaw State University</h3>
+            <p class="edu-degree">B.S. Electrical Engineering · <span class="nowrap">Summa Cum Laude</span> · 4.0</p>
+            <p class="edu-meta">May 2020 – May 2023</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Jaden Zwicker · Los Angeles, CA</p>
+      <p><a href="mailto:jaden.zwicker@gmail.com">jaden.zwicker@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var tabs = Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));
+      var panels = {
+        school: document.getElementById('panel-school'),
+        work: document.getElementById('panel-work')
+      };
+
+      function fromHash() {
+        var h = (location.hash || '').replace('#', '').toLowerCase();
+        if (h === 'work' || h === 'projects-work') return 'work';
+        return 'school';
+      }
+
+      function select(name, opts) {
+        opts = opts || {};
+        tabs.forEach(function (tab) {
+          var on = tab.getAttribute('data-tab') === name;
+          tab.setAttribute('aria-selected', on ? 'true' : 'false');
+          tab.tabIndex = on ? 0 : -1;
+          if (on && opts.focusTab) tab.focus();
+        });
+        Object.keys(panels).forEach(function (key) {
+          var panel = panels[key];
+          if (!panel) return;
+          if (key === name) panel.removeAttribute('hidden');
+          else panel.setAttribute('hidden', '');
+        });
+        var hash = name === 'work' ? 'work' : 'school';
+        if ((location.hash || '').replace('#', '') !== hash) {
+          if (history.replaceState) history.replaceState(null, '', '#' + hash);
+        }
+      }
+
+      tabs.forEach(function (tab, i) {
+        tab.addEventListener('click', function () {
+          select(tab.getAttribute('data-tab'));
+        });
+        tab.addEventListener('keydown', function (e) {
+          var next = i;
+          if (e.key === 'ArrowRight' || e.key === 'ArrowDown') next = (i + 1) % tabs.length;
+          else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') next = (i - 1 + tabs.length) % tabs.length;
+          else if (e.key === 'Home') next = 0;
+          else if (e.key === 'End') next = tabs.length - 1;
+          else return;
+          e.preventDefault();
+          select(tabs[next].getAttribute('data-tab'), { focusTab: true });
+        });
+      });
+
+      window.addEventListener('hashchange', function () { select(fromHash()); });
+      select(fromHash());
+    })();
+  </script>
+</body>
+</html>
